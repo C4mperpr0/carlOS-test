@@ -30,7 +30,7 @@
   outputs = inputs @ {self, ...}: let
     flake-confs = import ./flake-confs.nix;
   in {
-    nixosConfigurations = import ./modules/system {
+    nixosModules = import ./modules/system {
       inherit inputs flake-confs self;
     };
   };
