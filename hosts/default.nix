@@ -42,10 +42,10 @@ in {
       buildName = "laptop-lenovo-yoga";
     };
     modules =
-      commonModules
-      ++ [
-        ./laptop-lenovo-yoga
-      ];
+      commonModules;
+      #++ [
+      #  ./laptop-lenovo-yoga
+      #];
   };
 
   # universal desktop pc config
