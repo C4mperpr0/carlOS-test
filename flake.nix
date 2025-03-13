@@ -30,7 +30,7 @@
   outputs = inputs @ {self, ...}: let
     flake-confs = import ./flake-confs.nix;
   in {
-    nixosHost = import ./hosts/ {
+    testHost = import ./hosts/ {
       inherit inputs flake-confs self;
     }.laptop-lenovo-yoga;
   };
