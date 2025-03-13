@@ -18,16 +18,18 @@
   ];
 in {
   # universal laptop config
-  laptop = lib.nixosSystem {
-    inherit system;
-    specialArgs = {
-      inherit self inputs flake-confs pkgs pkgs-unstable;
-      buildName = "laptop";
-    };
-    modules =
-      commonModules
-      ++ [
-        ./laptop
-      ];
-  };
+  laptop =
+    #lib.nixosSystem {
+    #inherit system;
+    #specialArgs = {
+    #inherit self inputs flake-confs pkgs pkgs-unstable;
+    #buildName = "laptop";
+    #};
+    #modules =
+    commonModules
+    ++ [
+      ./laptop
+    ];
+  #};
+  #;
 }
