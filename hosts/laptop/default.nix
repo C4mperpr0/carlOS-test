@@ -14,33 +14,33 @@
 
   nixosModules = {
     #minegrub.enable = true;
-    university.enable = true;
-    desktop-environment = {
-      kde.enable = true;
-      hyprland.enable = true;
-    };
+    #university.enable = true;
+    #desktop-environment = {
+    #kde.enable = true;
+    #hyprland.enable = true;
+    #};
     office = {
       enable = true;
-      latex.enable = true;
+      #  latex.enable = true;
     };
-    firefox-setup.enable = true;
-    media = {
-      enable = true;
-      modeling.enable = true;
-    };
-    programming = {
-      enable = true;
-      game-development.enable = true;
-      virtualization.enable = true;
-      basic-languages.enable = true;
-    };
+    #firefox-setup.enable = true;
+    #media = {
+    #  enable = true;
+    #  modeling.enable = true;
+    #};
+    #programming = {
+    #  enable = true;
+    #  game-development.enable = true;
+    #  virtualization.enable = true;
+    #  basic-languages.enable = true;
+    #};
     #stylix = {
     #  enable = true;
     #};
-    gaming.enable = true;
-    social.enable = true;
-    cli-packages.enable = true;
-    ui-utils.enable = true;
+    #gaming.enable = true;
+    #social.enable = true;
+    #cli-packages.enable = true;
+    #ui-utils.enable = true;
   };
 
   # Bootloader.
@@ -66,9 +66,9 @@
   # make Wa do the Com
   services.xserver.wacom.enable = true;
 
-  home-manager.users.${flake-confs.user.name} = {pkgs, ...}: {
-    home.stateVersion = "23.11";
-  };
+  #home-manager.users.${flake-confs.user.name} = {pkgs, ...}: {
+  #  home.stateVersion = "23.11";
+  #};
 
   system.stateVersion = "23.05"; # Did you read the comment?
 }

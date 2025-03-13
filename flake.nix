@@ -32,6 +32,6 @@
   in {
     testHost = import ./hosts/ {
       inherit inputs flake-confs self;
-    }.laptop-lenovo-yoga;
+    }.laptop;
   };
 }
