@@ -32,6 +32,6 @@
   in {
     nixosHost = import ./hosts/ {
       inherit inputs flake-confs self;
-    };
+    }.laptop-lenovo-yoga;
   };
 }
